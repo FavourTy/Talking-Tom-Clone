@@ -195,7 +195,7 @@ class _TalkingTomHomePageState extends State<TalkingTomHomePage>
                 const Padding(
                   padding: EdgeInsets.symmetric(horizontal: 32.0),
                   child: Text(
-                    'Speak to the character and it will listen and repeat what you said!',
+                    'Speak to the character and it will listen and repeat what you say!',
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 16, color: Colors.grey),
                   ),

@@ -95,10 +95,11 @@ class GameController extends ChangeNotifier {
     await _audioPlayer.stop();
     
     // Delete previous recording
-    if (_currentRecordingPath != null && File(_currentRecordingPath!).existsSync()) {
+    if (_currentRecordingPath != null) {
       try {
         await File(_currentRecordingPath!).delete();
       } catch (e) {
+        // Ignore errors if file doesn't exist
         if (kDebugMode) {
           print("Error deleting file: $e");
         }
